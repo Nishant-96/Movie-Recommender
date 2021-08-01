@@ -42,11 +42,9 @@ export default function App() {
         })}
         <ul className="outputContainer">
           <p>Top Five: </p>
-          <li>{genreList[0]}</li>
-          <li>{genreList[1]}</li>
-          <li>{genreList[2]}</li>
-          <li>{genreList[3]}</li>
-          <li>{genreList[4]}</li>
+          {Object.values(genreList).map((gen) => (
+            <li>{gen}</li>
+          ))}
         </ul>
       </div>
     </div>
